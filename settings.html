@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MyAdmin</title>
+</head>
+
+<body>
+    <!-- START HERE -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">MyAdmin</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="posts.html" class="nav-link active">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categories.html" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="users.html" class="nav-link">Users</a>
+                    </li>
+                </ul>
+                <!-- right nav links -->
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="" class="nav-link dropdown-toggle " id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fas fa-user px-1 "></i>Welcome
+                                Admin</a>
+                            <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="profile.html"><i class="fas fa-user-circle"></i>
+                                    Profile</a>
+                                <a class="dropdown-item" href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link"><i class="fas fa-user-times px-1"></i>Logout</a>
+                    </li>
+
+                </ul>
+                <!-- end right nav links -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- home-header -->
+    <section id="home-header" class="bg-primary text-white mb-0">
+        <div class="container">
+            <h1 class="p-4"><i class="fas fa-cog"></i> Settings</h1>
+
+        </div>
+
+    </section>
+    <section id="settings-function" class="bg-light p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="" class="btn btn-dark mb-2 btn-block">Back To Dashboard</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="btn btn-success btn-block">Save Changes</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Edit Setting -->
+    <section id="edit-setting" class="m-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Edit Settings</h3>
+                        </div>
+                        <div class="card-body">
+                            <!-- form check 1 -->
+                            <h3>Allow User Registration</h3>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    No
+                                </label>
+                            </div>
+                            <!-- form check 2 -->
+                            <h3>Homepage Format</h3>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios1-2"
+                                    value="option1-2" checked>
+                                <label class="form-check-label" for="exampleRadios1-2">
+                                    Blog Page
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2-2"
+                                    value="option2-2">
+                                <label class="form-check-label" for="exampleRadios2-2">
+                                    Homepage
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer id="main-footer" class="text-white text-center py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy;
+                        <span id="year"></span> MyAdmin</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+
+        // Modal
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+
+        // body input
+        CKEDITOR.replace('editor1');
+    </script>
+</body>
+
+</html>
